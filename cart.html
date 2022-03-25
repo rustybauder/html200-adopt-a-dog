@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#main-content" class="hidden">Skip to main content</a>
+      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
+      <h1>Adopt-A-Dog</h1>
+      <p>Seattle's premiere dog adoption agency</p>
+      <div>
+        <img src="images/cart-icon.svg" alt="Shopping Cart Icon">
+        <a>$1234.56</a>
+        <a href="checkout.html" class="checkout">Checkout</a>
+      </div>
+    </header>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+<section>
+  <h2>Checkout</h2>
+    <div class="form">
+  <form name="checkout" method="GET">
+    <label class="name-label" for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="email@example.com" required><br>
+    <label for="tel">Phone Number:</label><br>
+    <input type="tel" id="tel" name="tel" placeholder="(012) 345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    <label for="address">Street Address:</label><br>
+    <input type="text" id="address" name="address" placeholder="1234 Main Street" required><br>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city" placeholder="Hometown" required><br>
+    <label for="state">State:</label><br>
+    <select id="state" name="state">
+      <option value="WA">WA</option>
+      <option value="OR">OR</option>
+      <option value="ID">ID</option>
+      <option value="AK">AK</option>
+      <option value="MT">MT</option>
+    </select><br>
+    <label for="zip">Zip Code:</label><br>
+    <input type="text" id="zip" name="zip" placeholder="98765" required><br>
+    <p>First Time Adopter?</p><br>
+  <input type="radio" id="YES" name="first_time" value="YES">
+  <label for="YES">YES</label>
+  <input type="radio" id="NO" name="first_time" value="NO">
+  <label for="NO">NO</label><br><br>
+<label for="pickup">Pickup Location:</label><br>
+<select id="pickup" name="pickup">
+  <option value="option_1">Option 1</option>
+  <option value="option_2">Option 2</option>
+  <option value="option_3">Option 3</option>
+  <option value="option_4">Option 4</option>
+  <option value="option_5">Option 5</option>
+</select><br>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Select this box if you wish to receive our nonexistent newsletter</label><br>
+    <input type="submit" value="SUBMIT">
+  </form>
+  </div>
+</section>
+
+    <footer class="footer">
+      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <span class="sr-only">this link opens in a new tab</span><a href="index.html" target="_blank">Home /</a>
+      <span class="sr-only">this link opens in a new tab</span><a href="dogs.html" target="_blank">Dogs /</a>
+      <span class="sr-only">this link opens in a new tab</span><a href="blog.html" target="_blank">Blog /</a>
+      <span class="sr-only">this link opens in a new tab</span><a href="contact-us.html" target="_blank">Contact Us /</a>
+      <p>© 2022 Adopt-A-Dog, LLC | Seattle, WA</p>
+    </footer>
+  </body>
+  </html>
