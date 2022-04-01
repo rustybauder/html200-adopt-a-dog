@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#main-content" class="hidden">Skip to main content</a>
+<div class="row">
+      <div class="col span_4_of_12">
+      <div class="header-logo">
+      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
+      <h1>Seattle's premiere dog adoption agency</h1>
+    </div>
+    </div>
+      <div class="col span_8_of_12">
+        <div class="cart">
+          <a class="cart-price">$1234.56</a>
+        <img class="shopping-cart" src="images/cart-icon.svg" alt="Shopping Cart Icon">
+        <a class="checkout" href="cart.html">Checkout</a>
+      </div>
+    </div>
+  </div>
+    </header>
+
+    <div class="navbar">
+      <a class="home" href="index.html">Home</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="blog.html">Blog</a>
+      <a class="active" href="contact-us.html">Contact Us</a>
+    </div>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="col span_12_of_12">
+  <h3 class="checkout-header">Contact Us</h3>
+</div>
+  <form name="contact" method="GET">
+    <div class="col span_12_of_12">
+    <label class="label" for="fname">First name:</label><br>
+    <input class="form-field" type="text" id="fname" name="fname" placeholder="John" required><br>
+  </div>
+  <div class="col span_12_of_12">
+    <label class="label" for="lname">Last name:</label><br>
+    <input class="form-field" type="text" id="lname" name="lname" placeholder="Doe" required><br>
+  </div>
+  <div class="col span_12_of_12">
+    <label class="label" for="email">Email:</label><br>
+    <input class="form-field" type="email" id="email" name="email" placeholder="email@example.com" required><br>
+  </div>
+  <div class="col span_12_of_12">
+    <label class="label" for="tel">Phone Number:</label><br>
+    <input class="form-field" type="tel" id="tel" name="tel" placeholder="(012) 345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+  </div>
+  <div class="col span_12_of_12">
+  <label class="label" for="message">Message:</label><br>
+  <textarea class="message" id="message" rows="4" cols="50" name="comment" placeholder="Enter message here...">
+</textarea>
+</div>
+<div class="col span_12_of_12">
+    <label class="file" for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile"><br>
+  </div>
+  <div class="col span_12_of_12">
+    <input class="checkbox" type="checkbox" id="checkbox">
+    <label for="checkbox">Select this box if you wish to receive our nonexistent newsletter</label><br>
+  </div>
+  <div class="col span_12_of_12">
+    <input class="submit" type="submit" value="SUBMIT">
+  </div>
+  </form>
+</div>
+  </section>
+
+    <footer class="footer">
+      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex <br> esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <span class="sr-only">this link opens in a new tab</span><a href="index.html" target="_blank">Home /</a>
+      <span class="sr-only">this link opens in a new tab</span><a href="dogs.html" target="_blank">Dogs /</a>
+      <span class="sr-only">this link opens in a new tab</span><a href="blog.html" target="_blank">Blog /</a>
+      <span class="sr-only">this link opens in a new tab</span><a href="contact-us.html" target="_blank">Contact Us /</a>
+      <p>© 2022 Adopt-A-Dog, LLC | Seattle, WA</p>
+    </footer>
+  </body>
+  </html>
