@@ -28,6 +28,18 @@
 
     <div class="navbar">
       <a class="home" href="index.html">Home</a>
+      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
+      <h1>Adopt-A-Dog</h1>
+      <p>Seattle's premiere dog adoption agency</p>
+      <div>
+        <img src="images/cart-icon.svg" alt="Shopping Cart Icon">
+        <a>$1234.56</a>
+        <a href="checkout.html" class="checkout">Checkout</a>
+      </div>
+    </header>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
       <a href="dogs.html">Dogs</a>
       <a href="blog.html">Blog</a>
       <a class="active" href="contact-us.html">Contact Us</a>
@@ -73,6 +85,25 @@
   </div>
   </form>
 </div>
+  <h4>CONTACT ME</h4>
+  <form name="contact" method="GET">
+    <label class="name-label" for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="John" required><br>
+    <label class="name-label" for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="email@example.com" required><br>
+    <label for="tel">Phone Number:</label><br>
+    <input type="tel" id="tel" name="tel" placeholder="(012) 345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" rows="4" cols="50" name="comment" placeholder="Enter message here...">
+</textarea>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile"><br>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Select this box if you wish to receive our nonexistent newsletter</label><br>
+    <input type="submit" value="SUBMIT">
+  </form>
   </section>
 
     <footer class="footer">
