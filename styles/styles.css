@@ -85,7 +85,7 @@ color: white;
 
 .dog-hug-img {
   margin-left: 20rem;
-  padding-top: 100px;
+  padding-top: 7rem;
 }
 
 .blog-img {
@@ -134,11 +134,11 @@ color: white;
 .navbar a {
   float: left;
   display: block;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #093c60;
   text-align: center;
-  padding: 20px 16px;
+  padding: 1.5rem .8rem;
   text-decoration: none;
 }
 
@@ -242,8 +242,8 @@ margin-bottom: 3rem;
 .columns {
   float: left;
   width: 25%;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 3rem;
+  margin-top: 3rem;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
@@ -403,12 +403,13 @@ margin-bottom: 3rem;
   margin-left: -3rem;
 }
 .footer {
-  padding: 20px;
+
+  padding: 2rem;
   text-align: center;
   background: #093c60;
-  margin-top: 20px;
+  margin-top: 1.5rem;
   color: white;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .footer img {
   width: 25%;
@@ -418,13 +419,13 @@ margin-bottom: 3rem;
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding-top: 15px;
+  padding-top: 1.5rem;
 }
 
 .footer p {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  line-height: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 2rem;
 }
 .sr-only {
   position: absolute;
