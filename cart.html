@@ -7,99 +7,53 @@
   </head>
 
   <body>
+    <script src="./form.js" async></script>
     <header class="header">
       <a href="#main-content" class="hidden">Skip to main content</a>
-<div class="row">
-      <div class="col span_4_of_12">
-      <div class="header-logo">
-      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
-      <h1>Seattle's premiere dog adoption agency</h1>
-    </div>
-    </div>
-      <div class="col span_8_of_12">
-        <div class="cart">
-          <a class="cart-price">$1234.56</a>
-        <img class="shopping-cart" src="images/cart-icon.svg" alt="Shopping Cart Icon">
-        <a class="checkout" href="cart.html">Checkout</a>
+<div class="banner">
+  <div class="header-grid">
+    <div id="header-right">
+        <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
+        <h1>Seattle's premiere dog adoption agency</h1>
       </div>
+
+          <div class="cart-container">
+            <div>
+            <a class="cart-price">$1234.56</a>
+          <img class="shopping-cart" src="images/cart-icon.svg" alt="Shopping Cart Icon">
+        </div>
+          <a class="checkout" href="cart.html">Checkout</a>
+        </div>
+
     </div>
-  </div>
-    </header>
+      </header>
 
     <div class="navbar">
       <a class="home" href="index.html">Home</a>
-      <img src="images/adoptadog-logo.svg" alt="Adopt-A-Dog Logo">
-      <h1>Adopt-A-Dog</h1>
-      <p>Seattle's premiere dog adoption agency</p>
-      <div>
-        <img src="images/cart-icon.svg" alt="Shopping Cart Icon">
-        <a>$1234.56</a>
-        <a href="checkout.html" class="checkout">Checkout</a>
-      </div>
-    </header>
-
-    <div class="navbar">
-      <a href="index.html">Home</a>
       <a href="dogs.html">Dogs</a>
       <a href="blog.html">Blog</a>
       <a href="contact-us.html">Contact Us</a>
     </div>
 
 <section>
-  <div class="row">
-    <div class="col span_12_of_12">
   <h2 class="checkout-header">Checkout</h2>
-</div>
-</div>
-    <div class="form">
-  <form name="checkout" method="GET">
-    <div class="row">
-      <div class="col span_12_of_12">
+  <form  class="checkout-form" name="checkout" action="/action.php" method="POST" id="checkout">
+    <div>
     <label class="label" for="name">Name:</label><br>
     <input class="form-field" type="text" id="name" name="name" placeholder="John Doe" required><br>
-  </div>
-</div>
-  <div class="row">
-    <div class="col span_12_of_12">
     <label class="label" for="email">Email Address:</label><br>
     <input class="form-field" type="email" id="email" name="email" placeholder="email@example.com" required><br>
-  </div>
-</div>
-  <div class="row">
-    <div class="col span_12_of_12">
     <label class="label" for="tel">Phone Number:</label><br>
     <input class="form-field" type="tel" id="tel" name="tel" placeholder="(012) 345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-</div>
-</div>
-<div class="row">
-  <div class="col span_12_of_12">
     <label class="label" for="address">Street Address:</label><br>
     <input class="form-field" type="text" id="address" name="address" placeholder="1234 Main Street" required><br>
-  </div>
-</div>
-    <div class="row">
-      <div class="col span_2_of_12">
     <label class="label" for="city">City:</label><br>
     <input class="city" type="text" id="city" name="city" placeholder="Hometown" required><br>
   </div>
-  <div class="col span_1_of_12">
+  <div class="state-zip">
+  <div>
     <label class="label" for="state">State:</label><br>
     <select class="state" id="state" name="state">
-  <h2>Checkout</h2>
-    <div class="form">
-  <form name="checkout" method="GET">
-    <label class="name-label" for="name">Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="John Doe" required><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="email@example.com" required><br>
-    <label for="tel">Phone Number:</label><br>
-    <input type="tel" id="tel" name="tel" placeholder="(012) 345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-    <label for="address">Street Address:</label><br>
-    <input type="text" id="address" name="address" placeholder="1234 Main Street" required><br>
-    <label for="city">City:</label><br>
-    <input type="text" id="city" name="city" placeholder="Hometown" required><br>
-    <label for="state">State:</label><br>
-    <select id="state" name="state">
       <option value="WA">WA</option>
       <option value="OR">OR</option>
       <option value="ID">ID</option>
@@ -107,84 +61,52 @@
       <option value="MT">MT</option>
     </select><br>
   </div>
-  <div class="col span_9_of_12">
+  <div>
     <label class="label" for="zip">Zip Code:</label><br>
     <input class="zip" type="text" id="zip" name="zip" placeholder="98765" required><br>
   </div>
 </div>
-<div class="row">
-  <div class="col span_12_of_12">
     <p class="first-time">First Time Adopter?</p><br>
-  <input class="checkbox" type="radio" id="YES" name="first_time" value="YES">
+  <input class="checkbox" type="radio" id="YES" name="first_time" value="YES" required>
   <label class="Y-N" for="YES">Yes</label>
-  <input type="radio" id="NO" name="first_time" value="NO">
+  <input type="radio" id="NO" name="first_time" value="NO" required>
   <label class="Y-N" for="NO">No</label><br><br>
-</div>
-</div>
-<div class="row">
-  <div class="col span_12_of_12">
+
 <label class="pickup" for="pickup">Pickup Location:</label><br>
 <select class="pickup-menu" id="pickup" name="pickup">
-    <label for="zip">Zip Code:</label><br>
-    <input type="text" id="zip" name="zip" placeholder="98765" required><br>
-    <p>First Time Adopter?</p><br>
-  <input type="radio" id="YES" name="first_time" value="YES">
-  <label for="YES">YES</label>
-  <input type="radio" id="NO" name="first_time" value="NO">
-  <label for="NO">NO</label><br><br>
-<label for="pickup">Pickup Location:</label><br>
-<select id="pickup" name="pickup">
   <option value="option_1">Option 1</option>
   <option value="option_2">Option 2</option>
   <option value="option_3">Option 3</option>
   <option value="option_4">Option 4</option>
   <option value="option_5">Option 5</option>
 </select>
-</div>
-</div>
-<div class="row">
-  <div class="col span_12_of_12">
 <h2 class="dogs-adopted">Dogs Adopted</h2>
-</div>
-</div>
-<div class="row">
-  <div class="col span_3_of_12">
+<div class="cart-details">
+  <div>
 <img class="cart-img-lucas" src="images/lucas-checkout.jpg" alt="Lucas">
 </div>
-<div class="col span_2_of_12">
+<div>
 <h3 class="dog-name-lucas">Lucas</h3>
 <p class="dog-cost-lucas"><strong>Cost to Adopt:</strong> $1234.56</p>
 </div>
-<div class="col span_3_of_12">
+<div>
 <img class="cart-img-duffy" src="images/duffy-checkout.jpg" alt="Duffy">
 </div>
-<div class="col span_4_of_12">
+<div>
 <h3 class="dog-name-duffy">Duffy</h3>
 <p class="dog-cost-duffy"><strong>Cost to Adopt:</strong> $1234.56</p>
 </div>
 </div>
-<div>
-  <div class="row">
-    <div class="col span_12_of_12">
 <h2 class="label">Total Adoption Cost</h2>
 <p class="total-cost">$1234.56<p>
 </div>
-</div>
-</div>
 <div>
-  <div class="row">
-    <div class="col span_12_of_12">
     <input class="checkbox" type="checkbox" id="checkbox">
     <label for="checkbox">Select this box if you wish to receive our nonexistent newsletter</label><br>
-  </div>
-    <input class="submit" type="submit" value="Submit">
-  </div>
+  <button type="submit" class="submit" onclick="submitEvent()" id="submit">Submit</button>
 </div>
-</select><br>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox">Select this box if you wish to receive our nonexistent newsletter</label><br>
-    <input type="submit" value="SUBMIT">
   </form>
+
   </div>
 </section>
 
@@ -197,5 +119,8 @@
       <span class="sr-only">this link opens in a new tab</span><a href="contact-us.html" target="_blank">Contact Us /</a>
       <p>© 2022 Adopt-A-Dog, LLC | Seattle, WA</p>
     </footer>
+
+
+
   </body>
   </html>
