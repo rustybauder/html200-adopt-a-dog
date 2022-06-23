@@ -7,7 +7,11 @@
   </head>
 
   <body>
-    <script src="./form.js" async></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--    <script src="./form.js" async></script> -->
+    <script src="./jqueryCart.js" charset="uft-8" async></script>
     <header class="header">
       <a href="#main-content" class="hidden">Skip to main content</a>
 <div class="banner">
@@ -37,14 +41,14 @@
 
 <section>
   <h2 class="checkout-header">Checkout</h2>
-  <form  class="checkout-form" name="checkout" action="/action.php" method="POST" id="checkout">
+  <form  class="checkout-form" name="checkout" id="checkout">
     <div>
     <label class="label" for="name">Name:</label><br>
     <input class="form-field" type="text" id="name" name="name" placeholder="John Doe" required><br>
     <label class="label" for="email">Email Address:</label><br>
     <input class="form-field" type="email" id="email" name="email" placeholder="email@example.com" required><br>
     <label class="label" for="tel">Phone Number:</label><br>
-    <input class="form-field" type="tel" id="tel" name="tel" placeholder="(012) 345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    <input class="form-field" type="tel" id="tel" name="tel" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
     <label class="label" for="address">Street Address:</label><br>
     <input class="form-field" type="text" id="address" name="address" placeholder="1234 Main Street" required><br>
     <label class="label" for="city">City:</label><br>
@@ -103,7 +107,7 @@
 <div>
     <input class="checkbox" type="checkbox" id="checkbox">
     <label for="checkbox">Select this box if you wish to receive our nonexistent newsletter</label><br>
-  <button type="submit" class="submit" onclick="submitEvent()" id="submit">Submit</button>
+  <button type="submit" class="submit" id="submit">Submit</button>
 </div>
   </form>
 
