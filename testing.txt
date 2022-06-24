@@ -1,0 +1,23 @@
+TESTING
+
+I started my testing process by checking my website on different web platforms,
+such as Google Chrome, Edge and Firefox. I was not able to test on Mac OS as I do not own a Mac computer. I also tested the webpage on my
+iPad and iPhone.
+
+Issues I fixed included:
+-Making sure I was using percentages, rems, and ems as much as possible.
+-Resizing/adusting some elements to ensure that they displayed properly in different windows.
+-Fixing the JQuerey on the dogs page.
+-Not really an issue, but I removed unused HTML from the pages.
+
+Pretty much everything else worked well enough.
+
+I did run into several issues that I was not able to fix:
+-The first issue requires a bit of context: I started designing this page on an older laptop with a 1080p resolution display.
+However, that laptop broke down and I replaced it with a new one with a 4k display. For whatever reason (possibly related to the display
+or something else) everything appears zoomed in on my browser. This means some elements are show weirdly unless I zoom out the page to 
+80%. I tried figuring out why this is the case, and I think it might be a system setting as it affects all three browsers I tried. I tried
+changing my CSS to fix it, but I only managed to make things worse.
+
+-Another issue I couldn't fix was when I change the screen size, the cart icon, cart total, and checkout button all move to different
+places in the header. This probably has to do with the way I coded it with CSS, but I was not able to figure it out without making it worse.                
